@@ -1,0 +1,38 @@
+% !Mode:: "TeX:UTF-8"
+
+\documentclass[1pt,onecolumn,a4paper]{article}
+% \documentclass[twocolumn,a4paper]{article}
+% -----导言区-----
+\usepackage{xeCJK}    %中文排版支持
+% \usepackage[hyperref,UTF8]{ctex}   %处理交叉引用链接
+\usepackage{hyperref}   %处理交叉引用链接
+\usepackage{graphicx}   %插图支持
+\usepackage{fontspec}   %字体处理
+
+% \setCJKmainfont{STBaoliTC-Regular}
+% \usepackage{syntonly}   %只编译不生成文档
+% \syntaxonly
+
+% -----定义区-----
+\input{def}
+
+
+\title{测试中文文档\thanks{aab}}    %标题信息
+\author{yanghaa}   %作者信息
+\date{}
+
+\begin{document}
+  \maketitle
+  % \tableofcontents
+
+  \input{body}
+  \bibliographystyle{ieeetr}
+  \bibliography{myref.bib}
+
+  \input{appendix}
+
+
+
+
+
+\end{document}
